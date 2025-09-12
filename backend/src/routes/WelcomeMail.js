@@ -3,40 +3,40 @@ import nodemailer from "nodemailer";
 import dotenv from 'dotenv'
 dotenv.config()
 
-const mailUser=process.env.MAIL_USER
-const mailPass=process.env.MAIL_PASS
+const mailUser = process.env.MAIL_USER
+const mailPass = process.env.MAIL_PASS
 
 const welcomeRoutes = express.Router();
 
-welcomeRoutes.post("/api/welcome", async (req, res) => {
-  const { email, name, amount } = req.body;
-  try {
-    const transporter = nodemailer.createTransport({
-      host: "smtp.hostinger.com",
-      port: 465,
-      secure: true, // true for port 465, false for other ports
-      auth: {
-        user: `${mailUser}`,
-        pass: `${mailPass}`,
-      },
-    });
+welcomeRoutes.post("/api/welcome", async(req, res) => {
+    const { email, name, amount } = req.body;
+    try {
+        const transporter = nodemailer.createTransport({
+            host: "smtp.hostinger.com",
+            port: 465,
+            secure: true, // true for port 465, false for other ports
+            auth: {
+                user: `${mailUser}`,
+                pass: `${mailPass}`,
+            },
+        });
 
-    const mailOptions = {
-      to: `${email}`,
-      from: "no-reply@enego.co.in",
-      subject: `Warm Welcome to ${name}  from ENEGO GROUP OF COMPANIES
+        const mailOptions = {
+            to: `${email}`,
+            from: "no-reply@enigoal.co.in",
+            subject: `Warm Welcome to ${name}  from Enigoal Startup Advisory Private Limited
 `,
-      html: `
+            html: `
         <p>Dear Sir/Madam,</p>
 
         <p>
           We are pleased to extend a warm welcome to <b>${name}</b> as a valued client of 
-          <b>ENEGO GROUP OF COMPANIES</b>. We sincerely appreciate the trust you’ve placed in us and are 
+          <b>Enigoal Startup Advisory Private Limited</b>. We sincerely appreciate the trust you’ve placed in us and are 
           excited about the opportunity to collaborate and contribute to your success.
         </p>
 
         <p>
-          At <b>ENEGO GROUP OF COMPANIES</b>, we are dedicated to offering high-quality, tailored services 
+          At <b>Enigoal Startup Advisory Private Limited</b>, we are dedicated to offering high-quality, tailored services 
           designed to meet the unique needs of <b>${name}</b>. Our experienced team is committed to providing 
           expert support and guidance at every stage of our partnership to ensure a smooth and successful experience.
         </p>
@@ -54,7 +54,7 @@ welcomeRoutes.post("/api/welcome", async (req, res) => {
         </p>
 
         <p>
-          For any queries kindly mail us at <a href="mailto:support@enego.co.in">support@enego.co.in</a>
+          For any queries kindly mail us at <a href="mailto:support@enigoal.co.in">support@enigoal.co.in</a>
         </p>
 
         <p style="color: #555; font-size: 14px; margin-top: 20px;">
@@ -62,17 +62,17 @@ welcomeRoutes.post("/api/welcome", async (req, res) => {
         </p>
 
         <p>Warm regards,</p>
-        <p><b>ENEGO GROUP OF COMPANIES</b></p>
-        <p><a href="https://enego.co.in">enego.co.in</a></p>
+        <p><b>Enigoal Startup Advisory Private Limited</b></p>
+        <p><a href="https://enigoal.co.in">enigoal.co.in</a></p>
       `,
-    };
+        };
 
-    await transporter.sendMail(mailOptions);
+        await transporter.sendMail(mailOptions);
 
-    res.status(200).json({ message: "Welcome Mail Sent Successfully." });
-  } catch (error) {
-    res.status(500).json({ message: "Server error.", error: error.message });
-  }
+        res.status(200).json({ message: "Welcome Mail Sent Successfully." });
+    } catch (error) {
+        res.status(500).json({ message: "Server error.", error: error.message });
+    }
 });
 
 export default welcomeRoutes;
