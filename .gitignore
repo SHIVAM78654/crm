@@ -20,7 +20,7 @@ coverage/
 .cache/
 
 # Build output
-dist/
+
 build/
 *.tsbuildinfo
 .env
