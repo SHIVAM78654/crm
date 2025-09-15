@@ -365,14 +365,10 @@ BookingRoutes.get("/bookings/filter", authenticateUser, async(req, res) => {
         // Payment mode filter
         if (paymentmode) {
             const validPaymentModes = [
-                "Kotak Mahindra Bank",
-                "HDFC Bank",
+                "QR Code",
                 "Razorpay",
-                "HDFC Gateway",
-                "CashFree Gateway",
-                "Phonepe Gateway",
-                "Enigoal Projects",
-                "Cash",
+                "Yes Bank",
+                "Cash"
             ];
             if (!validPaymentModes.includes(paymentmode)) {
                 return res.status(400).send({ message: "Invalid payment mode" });

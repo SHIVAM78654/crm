@@ -49,7 +49,7 @@ welcomeRoutes.post("/api/welcome", async(req, res) => {
         </p>
 
         <p>
-          Thank you once again for choosing <b>ENEGO GROUP OF COMPANIES</b>. We look forward to a successful 
+          Thank you once again for choosing <b>Enigoal Startup Advisory Private Limited</b>. We look forward to a successful 
           and fruitful collaboration, and to helping <b>${name}</b> achieve its business objectives.
         </p>
 
