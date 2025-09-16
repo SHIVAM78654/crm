@@ -83,7 +83,7 @@ export const CreateProfile = ({ apiUrl, userSession }) => {
   const [errors, setErrors] = useState({});
 
   const departments = ["Sales", "Digital", "Admin", "Legal", "Finance"];
-  const branches = ["1206", "808", "1512", "Admin", "Digital", "407 AMD", "408 AMD", "906"];
+  const branches = ["302", "108",  "Admin", "Digital", ];
   const maritalStatuses = ["Single", "Married", "Divorced", "Widowed"];
   const relationships = ["Father", "Mother", "Spouse", "Brother", "Sister", "Friend", "Other"];
 

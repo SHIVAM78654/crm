@@ -217,14 +217,11 @@ const EditBooking = ({ initialData, onClose }) => {
                   onChange={handleChange}
                 >
                   <MenuItem value="">Select branch</MenuItem>
-                  <MenuItem value="808">808</MenuItem>
-                  <MenuItem value="1206">1206 </MenuItem>
-                  <MenuItem value="1512">1512</MenuItem>
+                  <MenuItem value="302">302</MenuItem>
+                  <MenuItem value="108">108 </MenuItem>
                   <MenuItem value="Admin">Admin</MenuItem>
                   <MenuItem value="Digital-Team">Digital Team</MenuItem>
-                  <MenuItem value="407 AMD">407 AMD</MenuItem>
-                  <MenuItem value="408 AMD">408 AMD</MenuItem>
-                  <MenuItem value="906">906</MenuItem>
+             
                 </Select>
               </FormControl>
             </Grid>
@@ -384,10 +381,9 @@ const EditBooking = ({ initialData, onClose }) => {
                   onChange={handleChange}
                 >
                   <MenuItem value="">Select Bank</MenuItem>
-                  <MenuItem value="Kotak Mahindra Bank">Kotak Mahindra Bank</MenuItem>
                   <MenuItem value="HDFC Bank">HDFC Bank</MenuItem>
                   <MenuItem value="Razorpay">Razorpay</MenuItem>
-                  <MenuItem value="CashFree Gateway">CashFree Gateway</MenuItem>
+                  <MenuItem value="IDFC Bank">IDFC Bank</MenuItem>
                   <MenuItem value="Phonepe Gateway">Phonepe Gateway</MenuItem>
                   <MenuItem value="Cash">Cash</MenuItem>
                 </Select>

@@ -510,13 +510,10 @@ if (paymentEndDate) params.append("paymentEndDate", paymentEndDate);
             className="paymentmode-dropdown"
           >
             <option value="">Paymentmodes</option>
-            <option value="Kotak Mahindra Bank">Kotak Mahindra Bank</option>
             <option value="HDFC Bank">HDFC Bank</option>
             <option value="Razorpay">Razorpay</option>
-            <option value="HDFC Gateway">HDFC Gateway</option>
-            <option value="CashFree Gateway">CashFree Gateway</option>
+            <option value="IDFC Bank">IDFC Bank</option>
             <option value="Phonepe Gateway">Phonepe Gateway</option>
-            <option value="Enego Projects">Enego Projects</option>
             <option value="Cash">Cash</option>
           </select>
           <button className="search-button" onClick={handleSearch}>

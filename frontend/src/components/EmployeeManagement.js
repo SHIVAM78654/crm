@@ -29,7 +29,7 @@ export const EmployeeManagement = ({ apiUrl, userSession }) => {
   const [saving, setSaving] = useState(false);
 
   const departments = ["Sales", "Digital", "Admin", "Legal", "Finance"];
-  const branches = ["1206", "808", "1512", "Admin", "Digital", "407 AMD", "408 AMD", "906"];
+  const branches = ["302", "108",  "Admin", "Digital"];
 
   useEffect(() => {
     fetchEmployees();
