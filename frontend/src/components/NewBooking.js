@@ -18,6 +18,8 @@ import { apiUrl } from "./LoginSignup";
 import { FourMp } from "@mui/icons-material";
 import Mailer from "./mail";
 
+
+
 const AddBooking = ({ onClose }) => {
   const [formData, setFormData] = useState({
     branch: "",
@@ -151,7 +153,8 @@ const AddBooking = ({ onClose }) => {
         // console.log("Submitting booking:", dataToSubmit);
 
         //I remove the addbooking after /
-        fetch(`${apiUrl}/booking/`, {
+        // fetch(`${apiUrl}/booking/`, {
+        fetch(`${apiUrl}/booking/addbooking/`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -20,6 +20,8 @@ import lightLogo from "../assets/logo.png";
 import darkLogo from "../assets/whitelogo.png";
 
 export const apiUrl = process.env.REACT_APP_API_URL
+console.log(`The frontend send data to the backend url: ${apiUrl}`);
+
 
 const lightTheme = createTheme({
   palette: {
