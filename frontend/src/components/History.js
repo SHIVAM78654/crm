@@ -510,11 +510,11 @@ if (paymentEndDate) params.append("paymentEndDate", paymentEndDate);
             className="paymentmode-dropdown"
           >
             <option value="">Paymentmodes</option>
-            <option value="HDFC Bank">HDFC Bank</option>
-            <option value="Razorpay">Razorpay</option>
-            <option value="IDFC Bank">IDFC Bank</option>
-            <option value="Phonepe Gateway">Phonepe Gateway</option>
-            <option value="Cash">Cash</option>
+            <option value="hdfc Bank">HDFC Bank</option>
+            <option value="razorpay">Razorpay</option>
+            <option value="idfc Bank">IDFC Bank</option>
+            <option value="phonepe Gateway">Phonepe Gateway</option>
+            <option value="cash">Cash</option>
           </select>
           <button className="search-button" onClick={handleSearch}>
             <i className="fa-solid fa-magnifying-glass"></i>
