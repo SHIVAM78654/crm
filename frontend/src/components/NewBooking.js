@@ -267,8 +267,8 @@ const AddBooking = ({ onClose }) => {
                 variant="outlined"
               >
                 <MenuItem value=""> Select branch </MenuItem>{" "}
-                <MenuItem value="1206"> 108 </MenuItem>{" "}
-                <MenuItem value="1206"> 308 </MenuItem>{" "}
+                <MenuItem value="108"> 108 </MenuItem>{" "}
+                <MenuItem value="308"> 308 </MenuItem>{" "}
               </Select>{" "}
             </FormControl>{" "}
           </Grid>
