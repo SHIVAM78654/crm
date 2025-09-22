@@ -271,7 +271,7 @@ const AddBooking = ({ onClose }) => {
               >
                 <MenuItem value=""> Select branch </MenuItem>{" "}
                 <MenuItem value="108"> 108 </MenuItem>{" "}
-                <MenuItem value="308"> 308 </MenuItem>{" "}
+                <MenuItem value="302"> 302 </MenuItem>{" "}
               </Select>{" "}
             </FormControl>{" "}
           </Grid>
@@ -441,9 +441,9 @@ const AddBooking = ({ onClose }) => {
                 variant="outlined"
               >
                 <MenuItem value=""> Select Payment Mode </MenuItem>
-                <MenuItem value="hdfc Bank"> Qr Code </MenuItem>{" "}
+                <MenuItem value="hdfc Bank"> HDFC Bank </MenuItem>{" "}
                 <MenuItem value="Razorpay"> Razorpay </MenuItem>{" "}
-                <MenuItem value="idfc bank"> IDFC bank Bank </MenuItem>{" "}
+                <MenuItem value="idfc bank"> IDFC Bank</MenuItem>{" "}
                  <MenuItem value="yes bank"> Yes Bank </MenuItem>{" "}
                 <MenuItem value="PhonePe Gateway"> PhonePe Gateway </MenuItem>{" "}
                 <MenuItem value="cash"> Cash </MenuItem>{" "}
